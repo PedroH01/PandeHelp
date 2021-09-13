@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body{
+    font-family: 'Fjalla One', sans-serif;
+    background-image: url("../img/bgnovo1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#main{ 
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    border: 2px solid rgb(177, 177, 177);
+    background-color: black;
+}
+
+/* Cores do formulário */
+.color{
+    color: white;
+}
+
+#foto{
+    color: white;
+}
+/* Cores do formulário */
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+#header{
+    padding: 8px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#header h1{
+    text-transform: capitalize;
+    border-bottom: 1px solid white;
+}
+
+#header span{
+    color: red;
+}
+
+.menu{
+    overflow: hidden;
+    background-color: silver;
+}
+
+.menu a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 13px 20px;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.menu .menu_btt{
+    display: none;
+}
+
+.menu a:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.f_line input:required, #i_civil, #i_msg, #i_email{
+    width: 250px;
+    height: 40px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.f_line input[type=file]{
+    width: 118px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#i_data, #i_civil{ 
+    color: black;
+}
+
+#btt_form{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #4d9de7;
+    border-radius: 5px;
+    background-color: #4d9de7;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btt_form:hover{
+    transition: 0.5s;
+    border: 1px solid #79d8f5;
+    background-color: #79d8f5;
+    cursor: pointer;
+}
+
+.f_line{
+    display: flex;
+}
+
+.f_line span{
+    padding: 10px;
+}
+
+.f_line label{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#footer{
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+/* Responsividade do menu */
+@media screen and (max-width: 600px){
+
+    .menu a{
+        display: none;
+    }
+
+    .menu .menu_btt{
+        float: right;
+        display: block;
+    }
+
+    .menu.responsive{
+        position: relative;
+    }
+
+    .menu.responsive a.menu_btt{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu.responsive a{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .menu.responsive{
+        float: none;
+    }
+
+    .menu.responsive{
+        position: relative;
+    }
+
+    .menu.responsive{
+        display: block;
+        width: 100%;
+    }
+
+    .f_line{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    #main{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-image: none;
+    }
+
+    #main{
+        width: 100%;
+        font-size: 14px;
+}
+
+    #content{
+        display: block;
+    }    
+}
+
+@media(max-width: 800px){
+
+    .container{
+        margin: 0px;
+        width: auto;
+        display: block;
+    }
+
+    #content{
+        width: auto;
+    }
+
+}
+
+@media(max-width: 450px){
+    
+    h2{
+        font-size: 18px;
+    }
+}

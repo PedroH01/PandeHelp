@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>PandeHelp</title>
+        <meta charset="utf-8"/>
+        <script src="js/formulario.js"> </script>
+        <script src="js/menu.js"></script>
+        <link rel="stylesheet" href="css/formulario.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="img/LOGO4.png"/>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="header">
+                <h1>Pande<span>Help</span> </h1>
+                <p> <b>Se Você Precisa de Ajuda Cadastre-se Aqui e Entraremos em Contato</b> </p>
+            </div>
+        
+            <div class="menu" id="my_menu">
+                <a href="index.html">SOBRE</a> 
+                <a href="">CADASTRE-SE</a> 
+                <a href="ajude.html">AJUDE AQUI</a>  
+
+                <a href="#" onclick="show_menu()" class="menu_btt">
+                    <i class="material-icons" >menu</i>
+                </a>
+            </div>
+
+            <form> 
+                <div class="f_line">
+                    <span>
+                        <label class="color">Foto para Perfil:</label>
+                        <input id="i_perfil" type="file" />
+                    </span>
+                
+                    <span>
+                        <label class="color">Nome Completo:</label>
+                        <input id="i_nome" type="text" required />
+                    </span>
+                </div>
+
+                <div class="f_line">
+                    <span>
+                        <label class="color">Telefone para Contato:</label>
+                        <input id="i_tel" type="number" required />
+                    </span>
+                
+                    <span>
+                        <label class="color">E-mail para Contato:</label>
+                        <input id="i_email" type="email" />
+                    </span>
+                </div>
+
+                <div class="f_line">
+                    <span>
+                        <label class="color"> Estado Civil: </label>
+                        <select id="i_civil">
+                            <option value="c"> Casado (a) </option>
+                            <option value="s"> Solteiro (a) </option>
+                            <option value="d"> Divorciado (a) </option>
+                            <option value="v"> Viúvo (a) </option>
+                        </select>
+                    </span>
+                
+                    <span>
+                        <label class="color" for="nascimento">Data de Nascimento:</label>
+                        <input id="i_data" type="date" required />
+                    </span>
+                </div>
+
+                <div class="f_line"> 
+                    <span>
+                        <label class="color">Como Podemos lhe Ajudar:</label>
+                        <textarea id="i_msg" rows="5" cols="80" required> </textarea>
+                    </span>
+                </div>
+                
+                <div class="f_line">
+                    <span>
+                        <input type="submit" onclick="validacao()" value="Cadastrar-se" id="btt_form"/>
+                    </span>
+                </div>
+            </form>
+            
+            <div id="footer">
+                <p>
+                    Desenvolvido por Pedro Henrique - 2021
+                </p>
+            </div>
+            
+        </div>
+    </body>
+</html>
