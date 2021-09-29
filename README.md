@@ -1,4 +1,4 @@
-# PandeHelp 
+# PandeHelp 🆘
 
 # Sobre o projeto
 
